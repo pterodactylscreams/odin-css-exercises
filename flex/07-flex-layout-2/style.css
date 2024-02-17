@@ -5,15 +5,17 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: 1.4em;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
-  height: 72px;
+  height: 2em;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+  padding-top: 1em;
 }
 
 .sidebar {
@@ -26,4 +28,63 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.header {
+  font-weight:bolder;
+  font-size: 1.3em;
+  padding-left: 0.4em;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex:1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  flex-shrink: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding:32px;
+}
+
+.card {
+  padding: 0.4em;
+  margin:0.7em;
+  width:15em;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  justify-content: center;
 }
